@@ -32,5 +32,6 @@ public class Student {
     private List<Subject> subjects;
 
     @OneToMany(mappedBy = "student", cascade = CascadeType.REMOVE)
+    @JsonManagedReference
     private List<LibraryBook> libraryBooks;
 }
