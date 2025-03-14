@@ -16,7 +16,7 @@ public class LibraryBook {
     private Long id;
     private String title;
     @ManyToOne
-    @JoinColumn(name = "student_id", referencedColumnName = "id")
+    @JoinColumn(name = "student_id")
     private Student student;
 }
 
