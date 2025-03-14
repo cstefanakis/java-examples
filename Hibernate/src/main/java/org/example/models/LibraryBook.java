@@ -17,6 +17,7 @@ public class LibraryBook {
     private String title;
     @ManyToOne
     @JoinColumn(name = "student_id")
+    @JsonBackReference
     private Student student;
 }
 
