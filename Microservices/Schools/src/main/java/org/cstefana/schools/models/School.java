@@ -1,6 +1,7 @@
 package org.cstefana.schools.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.*;
 
 @EqualsAndHashCode(callSuper = true)
@@ -9,6 +10,7 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name ="tables")
 public class School extends BaseEntity{
     private String name;
     private String address;
