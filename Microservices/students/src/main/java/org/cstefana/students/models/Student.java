@@ -1,25 +1,26 @@
 package org.cstefana.students.models;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import java.time.LocalDate;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
 @NoArgsConstructor
 @Builder
 @AllArgsConstructor
 @Table(name = "students")
-public class Student {
-    @Id
-    @GeneratedValue()
-    private Long id;
+public class Student extends BaseEntity {
+
     private String firstName;
     private String lastName;
-    private int age;
+    private LocalDate birthdate;
+    private String email;
+    @OneToOne
+    @JoinColumn(name = "student_id", unique = true, nullable = false)
+    private Student student;
 }
