@@ -1,9 +1,7 @@
 package org.cstefana.students.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
 
@@ -20,7 +18,9 @@ public class Student extends BaseEntity {
     private String lastName;
     private LocalDate birthdate;
     private String email;
-    @OneToOne
-    @JoinColumn(name = "student_id", unique = true, nullable = false)
-    private Student student;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "student_id", referencedColumnName = "id")
+    @JsonManagedReference
+    private StudentCard studentCard;
 }
