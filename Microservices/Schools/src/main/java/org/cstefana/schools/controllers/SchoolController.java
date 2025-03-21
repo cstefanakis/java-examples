@@ -2,7 +2,6 @@ package org.cstefana.schools.controllers;
 
 import org.cstefana.schools.models.School;
 import org.cstefana.schools.services.SchoolService;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
