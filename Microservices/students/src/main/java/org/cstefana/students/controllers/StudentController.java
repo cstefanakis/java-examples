@@ -42,7 +42,7 @@ public class StudentController {
     @PostMapping()
     public ResponseEntity<Student> createStudent(@RequestBody Student student) {
         Student savedStudent = studentService.createStudent(student);
-        return ResponseEntity.status(HttpStatus.CREATED).body(student);
+        return ResponseEntity.status(HttpStatus.CREATED).body(savedStudent);
     }
 
     @PutMapping("/{id}")
