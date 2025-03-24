@@ -2,6 +2,7 @@ package org.cstefana.students.controllers;
 
 import org.cstefana.students.Service.StudentCardService;
 import org.cstefana.students.Service.StudentService;
+import org.cstefana.students.models.School;
 import org.cstefana.students.models.Student;
 import org.cstefana.students.models.StudentCard;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -83,5 +84,10 @@ public class StudentController {
     public ResponseEntity<Void> deleteStudentCardByStudentEmail(@RequestParam String studentEmail) {
         studentCardService.deleteStudentCardByStudentEmail(studentEmail);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("schools")
+    public ResponseEntity<List<School>> getAllSchools() {
+        return studentService.getSchools();
     }
 }
