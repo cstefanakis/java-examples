@@ -3,6 +3,8 @@ package org.cstefana.students.Service;
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import org.cstefana.students.Repositories.StudentRepository;
+import org.cstefana.students.feight.StudentInterface;
+import org.cstefana.students.models.School;
 import org.cstefana.students.models.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,10 +16,12 @@ import java.util.Optional;
 public class StudentService {
 
     private final StudentRepository studentRepository;
+    private final StudentInterface studentInterface;
 
     @Autowired
-    public StudentService(StudentRepository studentRepository) {
+    public StudentService(StudentRepository studentRepository, StudentInterface studentInterface) {
         this.studentRepository = studentRepository;
+        this.studentInterface = studentInterface;
     }
 
     public List<Student> getAllStudents() {
@@ -56,5 +60,9 @@ public class StudentService {
         Student studentFromDb = getStudentById(id);
         studentRepository.delete(studentFromDb);
         return studentFromDb;
+    }
+
+    public List<School> getSchools() {
+        return studentInterface.getAllSchools().getBody();
     }
 }
