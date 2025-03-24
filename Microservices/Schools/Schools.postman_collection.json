@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "7624ac46-656d-4e77-98f1-27e904c87196",
+		"name": "Schools",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41194988"
+	},
+	"item": [
+		{
+			"name": "Get All Schools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"school"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get School By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/school/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"school",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get School By Name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Greenwood Primary School",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/school/school-name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"school",
+						"school-name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update School by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Little Stars Academy\",\r\n        \"address\": \"Blk 899A, Woodlands Drive 50, #01-250, Singapore 730899\",\r\n        \"category\": \"Preschool\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/school/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"school",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete School By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/school/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"school",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create School Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Little Stars Academy\",\r\n    \"address\": \"Blk 899A, Woodlands Drive 50, #01-250, Singapore 730899\",\r\n    \"category\": \"Preschool\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"school"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
