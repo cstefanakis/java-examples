@@ -88,6 +88,6 @@ public class StudentController {
 
     @GetMapping("schools")
     public ResponseEntity<List<School>> getAllSchools() {
-        return studentService.getSchools();
+        return ResponseEntity.ok(studentService.getSchools());
     }
 }
