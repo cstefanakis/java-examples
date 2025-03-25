@@ -6,13 +6,15 @@ abstract class Car{
     //abstract method mast have abstract class
     public abstract void drive();
 
+    public abstract void run();
+
     public void playMusic(){
         System.out.println("play music");
     }
 }
 
 
-class WagonR extends Car{
+abstract class WagonR extends Car{
 
     @Override
     public void drive() {
@@ -20,10 +22,19 @@ class WagonR extends Car{
     }
 }
 
+class UpdatedWagonR extends WagonR{
+
+    @Override
+    public void run() {
+        System.out.println("in run");
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-        Car obj = new WagonR();
+        Car obj = new UpdatedWagonR();
         obj.drive();
         obj.playMusic();
+        obj.run();
     }
 }
