@@ -1,8 +1,6 @@
 package org.cstefana.upcastingAndDowncasting;
 
 class A {
-    A() {
-    }
 
     public void show1() {
         System.out.println("in A object");
@@ -10,8 +8,6 @@ class A {
 }
 
 class B extends A {
-    B() {
-    }
 
     public void show2() {
         System.out.println("in B object");

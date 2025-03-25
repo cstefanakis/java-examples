@@ -2,8 +2,6 @@ package org.cstefana.overriding;
 
 
 class Calc {
-    Calc() {
-    }
 
     public int add(int a, int b) {
         return a + b;
@@ -11,8 +9,6 @@ class Calc {
 }
 
 class AdvCalc extends Calc {
-    AdvCalc() {
-    }
 
     public int add(int a, int b) {
         return a + b + 1;

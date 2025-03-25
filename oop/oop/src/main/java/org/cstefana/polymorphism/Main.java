@@ -2,8 +2,6 @@ package org.cstefana.polymorphism;
 
 
 class A {
-    A() {
-    }
 
     public int add(int a, int b) {
         return a + b;

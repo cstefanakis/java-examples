@@ -1,8 +1,6 @@
 package org.cstefana.inheritance;
 
 class Calc {
-    Calc() {
-    }
 
     public int add(int a, int b) {
         return a + b;
@@ -14,8 +12,6 @@ class Calc {
 }
 
 class AdvCalc extends Calc {
-    AdvCalc() {
-    }
 
     public double divide(double a, double b) {
         return a / b;
@@ -27,8 +23,6 @@ class AdvCalc extends Calc {
 }
 
 class SuperAdvCalc extends AdvCalc {
-    SuperAdvCalc() {
-    }
 
     public double root(double a) {
         return Math.sqrt(a);

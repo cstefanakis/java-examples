@@ -1,8 +1,6 @@
 package org.cstefana.finalCalss.finalMethod;
 
 class Author {
-    Author() {
-    }
 
     public void createdBy() {
         System.out.println("Created by Me");
@@ -10,8 +8,6 @@ class Author {
 }
 
 class Book extends Author {
-    Book() {
-    }
 
     public void createdBy() {
         System.out.println("Created by Book printer");
