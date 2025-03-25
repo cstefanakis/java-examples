@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="765807d3-39d1-46d0-a91a-a51575ebb2f1" name="Changes" comment="explaining overriding and final">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cstefana/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/cstefana/upcastingAndDowncasting/Main.java" beforeDir="false" />
+    <list default="true" id="765807d3-39d1-46d0-a91a-a51575ebb2f1" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742820527590</updated>
       <workItem from="1742820528704" duration="5657000" />
-      <workItem from="1742885590009" duration="612000" />
+      <workItem from="1742885590009" duration="1028000" />
     </task>
     <task id="LOCAL-00001" summary="install oop project">
       <option name="closed" value="true" />
@@ -203,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742825620832</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <option name="closed" value="true" />
+      <created>1742887195829</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742887195829</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="install oop project" />
     <MESSAGE value="explaining overriding and final" />
-    <option name="LAST_COMMIT_MESSAGE" value="explaining overriding and final" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
