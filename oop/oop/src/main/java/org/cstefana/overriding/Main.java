@@ -20,9 +20,6 @@ class AdvCalc extends Calc {
 }
 
 public class Main {
-    public Main() {
-    }
-
     public static void main(String[] args) {
         Calc calc = new AdvCalc();
         System.out.println(calc.add(1, 1));

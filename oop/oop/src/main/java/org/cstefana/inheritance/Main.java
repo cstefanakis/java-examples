@@ -40,11 +40,13 @@ public class Main {
         Calc calc = new Calc();
         System.out.println(calc.add(1, 2));
         System.out.println(calc.sub(1, 2));
+
         AdvCalc advCalc = new AdvCalc();
         System.out.println(advCalc.add(1, 2));
         System.out.println(advCalc.sub(1, 2));
         System.out.println(advCalc.multiply((double)1.0F, (double)2.0F));
         System.out.println(advCalc.divide((double)2.0F, (double)2.0F));
+
         SuperAdvCalc superAdvCalc = new SuperAdvCalc();
         System.out.println(superAdvCalc.add(1, 2));
         System.out.println(superAdvCalc.sub(1, 2));

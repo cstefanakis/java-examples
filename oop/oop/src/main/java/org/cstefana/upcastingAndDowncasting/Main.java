@@ -19,9 +19,6 @@ class B extends A {
 }
 
 public class Main {
-    public Main() {
-    }
-
     public static void main(String[] args) {
         A objectOne = new B();
         objectOne.show1();
