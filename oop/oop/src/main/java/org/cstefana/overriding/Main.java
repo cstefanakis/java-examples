@@ -1,0 +1,32 @@
+package org.cstefana.overriding;
+
+
+class Calc {
+    Calc() {
+    }
+
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+class AdvCalc extends Calc {
+    AdvCalc() {
+    }
+
+    public int add(int a, int b) {
+        return a + b + 1;
+    }
+}
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        Calc calc = new AdvCalc();
+        System.out.println(calc.add(1, 1));
+        new Calc();
+        System.out.println(calc.add(1, 1));
+    }
+}
