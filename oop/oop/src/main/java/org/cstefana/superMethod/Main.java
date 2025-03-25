@@ -1,7 +1,6 @@
 package org.cstefana.superMethod;
 
 class A {
-
     public A() {
         System.out.println("Class A without number");
     }
@@ -13,7 +12,6 @@ class A {
 
 class B extends A {
     public B() {
-
         System.out.println("Class B without number");
     }
 
@@ -25,6 +23,6 @@ class B extends A {
 
 public class Main {
     public static void main(String[] args) {
-        B a = new B(5);
+        new B(5);
     }
 }
