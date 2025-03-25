@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e159191-caae-4cbe-b0b2-83792da5b9c0" name="Changes" comment="repair subject">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/src/main/java/org/cstefana/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/oop/src/main/java/org/cstefana/upcastingAndDowncasting/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,9 +71,10 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/chris/IdeaProjects/java-examples/Hibernate/src/main/java/org/example",
+    "last_opened_file_path": "C:/Users/chris/IdeaProjects/java-examples",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,6 +108,7 @@
       <workItem from="1741444533400" duration="571000" />
       <workItem from="1741445168564" duration="4415000" />
       <workItem from="1741470704215" duration="2887000" />
+      <workItem from="1742827127153" duration="1384000" />
     </task>
     <task id="LOCAL-00001" summary="install hibernate to maven">
       <option name="closed" value="true" />
