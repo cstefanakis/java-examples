@@ -10,8 +10,9 @@ class A {
 
 public class Main {
     public static void main(String[] args) {
-        //there build an anonymous inner class
+
         A obj = new A()
+                //there build an anonymous inner class
         {
             public void show()
             {
